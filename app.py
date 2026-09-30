@@ -11,6 +11,8 @@ import streamlit as st
 BASE = Path(__file__).parent
 MODEL_PATH = BASE / "model" / "crop_model.joblib"
 META_PATH = BASE / "model" / "model_meta.json"
+if not MODEL_PATH.exists():
+    MODEL_PATH, META_PATH = BASE / "crop_model.joblib", BASE / "model_meta.json"
 
 # Physically sensible limits used for input validation
 LIMITS = {
