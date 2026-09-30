@@ -1,0 +1,4 @@
+Model,Best params,CV F1 (train),Test Accuracy,Test Precision,Test Recall,Test F1,ROC-AUC (OvR)
+Logistic Regression,{'clf__C': 100},0.9776,0.9841,0.9852,0.9841,0.984,0.9999
+KNN,"{'clf__n_neighbors': 5, 'clf__weights': 'distance'}",0.968,0.9818,0.9829,0.9818,0.9816,0.9987
+Decision Tree,"{'clf__max_depth': None, 'clf__min_samples_leaf': 2}",0.9858,0.9795,0.9806,0.9795,0.9794,0.9893
